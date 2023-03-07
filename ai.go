@@ -58,6 +58,4 @@ func main() {
     // Serve static files from the "static" directory
     r.Static("/static", "./static")
 
-    // Start the server on port 8080
-    r.Run(":8080")
-}
+   }
