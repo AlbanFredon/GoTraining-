@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OpenAI Text Generation</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>OpenAI Text Generation</h1>
+    <form method="post" action="/generate">
+        <label for="prompt">Enter your prompt text:</label><br>
+        <textarea id="prompt" name="prompt" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Generate">
+    </form>
+    {{if .generatedText}}
+    <h2>Generated text:</h2>
+    <p>{{.generatedText}}</p>
+    {{end}}
+    <script src="/static/script.js"></script>
+</body>
+</html>
